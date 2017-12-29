@@ -23,6 +23,10 @@ a:hover, a:focus {
   border-bottom: 1px solid #2bbfff;
 }
 
+b {
+  font-weight: 700;
+}
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
