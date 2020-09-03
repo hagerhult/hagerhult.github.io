@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700|Merriweather:300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600" rel="stylesheet">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
@@ -20,34 +20,42 @@
 </head>
 <body>
 
-<header class="isteveryday">
+  <header class="isteveryday">
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <a href="index.html">hagerhult</a>
 
-</header>
+          <nav>
+            <a href="index.html#work">work</a>
+            <a href="index.html#contact">contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
 
 <section class="isteveryday">
   <div class="container">
     <div class="row">
-      <div class="eight columns">
-        <a href="index.html" class="button-outlined">Back</a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="eight columns">
-        <div class="main">
+      <div class="seven columns">
+        <div class="secondary">
           <div class="flex">
-
             <h1>
-              IST Everyday (WIP)
+              A school for everyone.
             </h1>
-            <h5>
+            <p>
               Using design to make life easier for students, teachers, parents and administrators by building a design system for Scandinavia’s leading provider of school management software.
-            </h5>
-            <div class="label">
+            </p>
+            <span class="label">
               Service design
-            </div>
-            <div class="label">
+            </span>
+            <span class="label">
               Design systems
-            </div>
+            </span>
           </div>
         </div>
       </div>
@@ -55,17 +63,12 @@
   </div>
 </section>
 
-<section class="divider-pre isteveryday">
-  <div class="slope">
-  </div>
-</section>
-
-<section class="projects">
+<section class="project">
   <div class="container">
 
     <div class="row">
       <div class="twelve columns">
-        <h6>Brief</h6>
+          <p><h2>Brief</h2></p>
           <p>IST is Scandinavia’s largest provider of school administration software and have over the years built up a large amount of trust amongst their customers by delivering software helping administrators to fulfill their complex tasks. I got to join the company's Product Management group to see where we could improve the product offering.</p>
           <p>Through a series of interviews and workshops with principals, administrators, teachers, students and parents we concluded that IST's offering structure would benefit greatly from a larger focus on students, teachers and parents.</p>
       </div>
@@ -79,7 +82,7 @@
 
     <div class="row">
       <div class="twelve columns">
-        <h6>Identified problems</h6>
+          <p><h2>Identified problems</h2></p>
           <p>An administrator’s tasks are often the most crucial, but the actual administrators are quite few. Meanwhile there are millions of users in the form of students, teachers and parents who don't feel the same positive way about IST as the administrators.</p>
           <p>Another finding was the lack of a unified IST brand. Something that made it confusing to users, but also made the development of functionality slow down as developers often had to make design decisions themselves or wait a long time to get help from one of the limited designers available.</p>
         </div>
@@ -93,7 +96,7 @@
 
       <div class="row extra-space">
         <div class="twelve columns">
-        <h6>Outcome</h6>
+          <p><h2>Outcome</h2></p>
           <p>We started working on a design system to be used across the organization. By involving the communication department, developers and product owners while we continuously tested our ideas with the different user groups, we aimed to provide a holistic solution covering everything from simple public websites to the complex administration monolith.</p>
           <p>Work was also started to bring the teacher and student applications into a modern framework and use them as pilots for the design system.</p>
           <p>This is by far the largest and most scary project I've worked in as the affected userbase is quite large. But the highlight is getting to work more with the strategic parts of product design where it feels like the possibilities to impact a company are endless.</p>
@@ -102,55 +105,83 @@
 
 </section>
 
-<section class="divider-post">
-  <div class="slope">
-  </div>
-</section>
-
 <section>
   <div class="container">
-  <div class="row">
-    <div class="twelve columns">
-      <h6>Other projects</h6>
+    <div class="row">
+      <div class="twelve columns">
+        <h2>Other projects</h2>
+      </div>
     </div>
   </div>
 
-  <div class="row">
-
-          <div class="six columns">
-            <a href="./kompanew.html"><article class="kompanew">
-              <div class="image">
-              </div>
-              <div class="tag">
-                <span class="prio">Kompa.new</span> Mobile app
-              </div>
-              <div class="desc">
-                How can Artificial Intelligence and Machine Learning revolutionize bookkeeping for people on the verge of starting their own company? A strategic innovation project.
-              </div>
-            </article></a>
+  <div class="container moreprojects kompanew">
+    <div class="row">
+      <div class="three columns photo">
+        <div class="flex">
+          <img src="images/kompanew-dash-2.png">
+        </div>
+      </div>
+      <div class="eight columns presentation">
+        <div class="flex">
+          <h1>Start your dream business today.</h1>
+          <span>How can Artificial Intelligence and Machine Learning revolutionize bookkeeping for people on the verge of starting their own small business?</span>
+          <div class="readmore">
+            <a href="kompanew.html" class="button-outlined" alt="Read more about Kompanew">Read more</a>
           </div>
-
-          <div class="six columns">
-            <a href="./eaccounting.html"><article class="eaccounting">
-              <div class="image">
-              </div>
-              <div class="tag">
-                <span class="prio">eAccounting</span> Product line
-              </div>
-              <div class="desc">
-                Tying together breakthroughs in technology, concepts from innovation projects and findings from user research to improve an existing product line with >100.000 users.
-              </div>
-            </article></a>
-          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="container moreprojects eaccounting">
+    <div class="row">
+      <div class="three columns photo">
+        <div class="flex">
+          <img src="images/eaccounting.png">
+        </div>
+      </div>
+      <div class="eight columns presentation">
+        <div class="flex">
+          <h1>Your economy on autopilot.</h1>
+          <span>Tying together breakthroughs in technology, concepts from innovation projects and findings from user research to improve an existing product line with >100.000 users.</span>
+          <div class="readmore">
+            <a href="eaccounting.html" class="button-outlined" alt="Read more about Eaccounting">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<footer>
-  <ul>
-    <li>If you want you can <a target="_blank" rel="noopener noreferrer" href="Hagerhult_Resume.pdf">find my resume here</a>.</li>
-    <li>Have a nice day.</li>
-  </ul>
+
+<footer id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+          <h2>contact</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="eight columns">
+        <span>I'm always interested in making new connections and discussing ideas.<br>
+        Contact me on any of these networks if you want to collaborate:</span>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/hagerhult" alt="Contact me on Linkedin">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><title>Contact me on Linkedin</title><path d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"/></svg>
+              <title xmlns="http://www.w3.org/2000/svg">Contact me on Linkedin</title>
+              <path xmlns="http://www.w3.org/2000/svg" d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"/>
+          </a>
+          <a href="https://dribbble.com/snorunge" alt="Contact me on Dribbble">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><title>Contact me on Dribbble</title><path d="M256,32C132.33,32,32,132.33,32,256S132.33,480,256,480,480,379.78,480,256,379.67,32,256,32ZM398.22,135.25a186.36,186.36,0,0,1,44,108.38c-40.37-2.1-88.67-2.1-127.4,1.52-4.9-12.37-9.92-24.5-15.4-36.17C344.08,189.62,378.5,164.18,398.22,135.25ZM256,69.33a185.81,185.81,0,0,1,119.12,42.94c-20.3,25.66-52.15,48-91.82,64.86C261.6,137,236.63,102.47,210,75.28A187.51,187.51,0,0,1,256,69.33ZM171.53,89.75c26.95,26.83,52.27,61,74.44,101C203.85,203.62,155.55,211,104,211c-9.8,0-19.36-.35-28.81-.94A186.78,186.78,0,0,1,171.53,89.75ZM69.68,247.13c10.62.47,21.35.7,32.2.59,58.8-.7,113.52-9.92,160.54-25q6.65,13.83,12.6,28.35a115.43,115.43,0,0,0-16.69,5C194.05,283.07,143.42,326.58,116,379.2A186,186,0,0,1,69.33,256C69.33,253,69.45,250.05,69.68,247.13ZM256,442.67a185.57,185.57,0,0,1-114.45-39.32c24.85-49.23,69.18-90,125.07-115.27,5.25-2.45,12.25-4.43,20.3-6.18q10,27.64,17.85,57.4A678,678,0,0,1,322,430.42,185.06,185.06,0,0,1,256,442.67Zm100.92-29.75a672.61,672.61,0,0,0-17.39-92.05c-4-15.17-8.51-29.87-13.41-44.22,36.63-3,80.5-2.57,115.38,0A186.5,186.5,0,0,1,356.92,412.92Z"/></svg>
+              <title xmlns="http://www.w3.org/2000/svg">Contact me on Dribbble</title>
+              <path xmlns="http://www.w3.org/2000/svg" d="M256,32C132.33,32,32,132.33,32,256S132.33,480,256,480,480,379.78,480,256,379.67,32,256,32ZM398.22,135.25a186.36,186.36,0,0,1,44,108.38c-40.37-2.1-88.67-2.1-127.4,1.52-4.9-12.37-9.92-24.5-15.4-36.17C344.08,189.62,378.5,164.18,398.22,135.25ZM256,69.33a185.81,185.81,0,0,1,119.12,42.94c-20.3,25.66-52.15,48-91.82,64.86C261.6,137,236.63,102.47,210,75.28A187.51,187.51,0,0,1,256,69.33ZM171.53,89.75c26.95,26.83,52.27,61,74.44,101C203.85,203.62,155.55,211,104,211c-9.8,0-19.36-.35-28.81-.94A186.78,186.78,0,0,1,171.53,89.75ZM69.68,247.13c10.62.47,21.35.7,32.2.59,58.8-.7,113.52-9.92,160.54-25q6.65,13.83,12.6,28.35a115.43,115.43,0,0,0-16.69,5C194.05,283.07,143.42,326.58,116,379.2A186,186,0,0,1,69.33,256C69.33,253,69.45,250.05,69.68,247.13ZM256,442.67a185.57,185.57,0,0,1-114.45-39.32c24.85-49.23,69.18-90,125.07-115.27,5.25-2.45,12.25-4.43,20.3-6.18q10,27.64,17.85,57.4A678,678,0,0,1,322,430.42,185.06,185.06,0,0,1,256,442.67Zm100.92-29.75a672.61,672.61,0,0,0-17.39-92.05c-4-15.17-8.51-29.87-13.41-44.22,36.63-3,80.5-2.57,115.38,0A186.5,186.5,0,0,1,356.92,412.92Z"/>
+          </a>.
+        </div>
+      </div>
+      <div class="four columns copy">
+        <span>You can find my resume <a href="" alt="Link to my resume, will open in a new tab.">here</a>.</span>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <script type="text/javascript">
