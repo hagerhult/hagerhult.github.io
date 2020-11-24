@@ -129,6 +129,10 @@ section {
   margin: auto;
 }
 
+.row {
+
+}
+
 .portrait {
   border-radius: 24px;
   max-width: 240px;
@@ -310,6 +314,22 @@ footer a:hover {
 .locked {
   background: #f6bca2;
   color: #8c2d09;
+}
+
+.review {
+  border-radius: 24px;
+  padding: 24px;
+  margin-bottom: 24px;
+  background: #fafafa;
+}
+
+.rating {
+  color:#ff7a00;
+}
+
+.author {
+  float: right;
+  margin-top: 24px;
 }
 
 /* Small devices */
