@@ -129,14 +129,10 @@ section {
   margin: auto;
 }
 
-.row {
-
-}
-
 .portrait {
-border-radius: 24px;
-max-width: 240px;
-width: 100%;
+  border-radius: 24px;
+  max-width: 240px;
+  width: 100%;
 }
 
 footer {
@@ -297,6 +293,25 @@ footer a:hover {
   margin-top: 24px;
 }
 
+.disclaimer {
+  text-align: center;
+  border-radius: 24px;
+  padding: 24px;
+  font-size: 1.4em;
+  font-weight: 600;
+  box-shadow: 0 -24px 40px 24px white;
+}
+
+.wip {
+  background: #fff5b4;
+  color: #9e6d0d;
+}
+
+.locked {
+  background: #f6bca2;
+  color: #8c2d09;
+}
+
 /* Small devices */
 
 @media (max-width: 399px) {
@@ -307,6 +322,8 @@ footer a:hover {
     margin-bottom: 16px;
     border: 16px solid #f2f3f7;
   }
+
+
 }
 
 
