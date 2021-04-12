@@ -23,7 +23,7 @@ img {
 a {
   text-decoration: none;
   position: relative;
-  color: #0098ff;
+  color: #0099ff;
   border-bottom: 1px solid #0099ff;
 }
 
@@ -49,12 +49,13 @@ li {
 }
 
 span {
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 300;
   line-height: 1.6em;
 }
 
 h1 {
+  font-size: 3em;
   font-weight: 600;
 }
 
@@ -66,23 +67,39 @@ h2 {
   /* Content */
 
 header {
-  height: auto;
   padding-top: 48px;
   font-weight: 600;
-  font-size: 1.4em;
+  font-size: 1.6em;
+}
+
+.jumbotron {
+  height: 90vh;
+  min-height: 700px;
+  background: #a5a5a5;
+  color: #edf5f7;
+}
+
+.portrait {
+  background-image: url("me.png");
+  background-size: auto 100%;
+  height: 90vh;
+  min-height: 700px;
+  width: 100%;
+  margin-left: 0%;
+  background-position: top left;
+  background-repeat: no-repeat;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
 }
 
 header a {
-  color: #1F2439;
+  color: #edf5f7;
   border-bottom: none;
 }
 
 header a:hover {
-  color: #1f2439;
-}
-
-nav a:hover {
-  border-bottom: 2px solid #0098ff;
+  color: #edf5f7;
 }
 
 nav {
@@ -92,7 +109,11 @@ nav {
 
 nav a {
   margin-left: 8px;
-  font-size: 0.7em;
+  font-size: .8em;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #edf5f7;
 }
 
 section {
@@ -104,12 +125,18 @@ section {
 
 .main {
   display: flex;
-  min-height: 350px;
+  height: 80vh;
+  min-height: 600px;
 }
 
 .secondary {
   display: flex;
   min-height: 350px;
+}
+
+#work {
+  padding-top: 24px;
+  margin-top: -24px;
 }
 
 #experience {
@@ -131,12 +158,6 @@ section {
 
 .row {
 
-}
-
-.portrait {
-  border-radius: 24px;
-  max-width: 240px;
-  width: 100%;
 }
 
 footer {
@@ -181,6 +202,20 @@ footer a:hover {
 .isteveryday {
   background: #91d1df;
   color: #00404e;
+  height: auto;
+  min-height: none;
+}
+
+.isteveryday a {
+  color: #00404e;
+}
+
+.isteveryday a:hover {
+  color: #00404e;
+}
+
+.isteveryday nav a:hover {
+  border-bottom: 2px solid #00404e;
 }
 
 .kompanew {
@@ -190,7 +225,6 @@ footer a:hover {
 
 .kompanew a {
   color: #edf5f7;
-  border-bottom: none;
 }
 
 .kompanew a:hover {
@@ -204,6 +238,19 @@ footer a:hover {
 .eaccounting {
   background: #fafafa;
   color: #1f2439;
+}
+
+.eaccounting a {
+  color: #1f2439;
+}
+
+.eaccounting a:hover {
+  color: #1f2439;
+}
+
+.eaccounting nav a:hover {
+  color: #1f2439;
+  border-bottom: 2px solid #1f2439;
 }
 
 .presentation {
@@ -232,7 +279,6 @@ footer a:hover {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #ecf0f5;
   text-align: center;
   font-size: 12px;
   font-weight: 700;
@@ -243,31 +289,39 @@ footer a:hover {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 24px;
-  border: 2px solid #ecf0f5;
   cursor: pointer;
   box-sizing: border-box;
 }
 
-.button-outlined:hover {
-  color: #ecf0f5;
-  background-color: rgba(0, 194, 255, 0.2);
-  border: 2px solid;
-}
-
 .isteveryday .button-outlined {
   color: #00404e;
-  border-color: #00404e;
+  border: 2px solid #00404e;
 }
 
 .kompanew .button-outlined {
   color: #edf5f7;
-  border-color: #edf5f7;
   border: 2px solid #edf5f7;
 }
 
 .eaccounting .button-outlined {
   color: #1f2439;
-  border-color: #1f2439;
+  border: 2px solid #1f2439;
+}
+
+.isteveryday .button-outlined:hover {
+  background: #00404e;
+  color: #91d1df;
+}
+
+.kompanew .button-outlined:hover {
+  background: #edf5f7;
+  color: #292a2b;
+}
+
+.eaccounting .button-outlined:hover {
+
+  background: #1f2439;
+  color: #fafafa;
 }
 
 /* SUBPAGES */
@@ -335,6 +389,20 @@ footer a:hover {
 /* Small devices */
 
 @media (max-width: 399px) {
+
+  .portrait {
+    width: 105%;
+    margin-left: -5%;
+  }
+
+  h1 {
+    font-size: 2.4em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
   .moreprojects {
     border-radius: 40px;
     padding: 32px;
@@ -342,17 +410,15 @@ footer a:hover {
     margin-bottom: 16px;
     border: 16px solid #f2f3f7;
   }
-
-
 }
-
 
 /* Larger screen */
 
 @media (min-width: 768px) {
-  .main {
-    height: 70vh;
-    min-height: 600px;
+
+  .portrait {
+    width: 60%;
+    margin-left: 40%;
   }
 
   .portrait {
@@ -367,7 +433,7 @@ footer a:hover {
 
   nav a {
     margin-left: 16px;
-    font-size: 0.7em;
+    font-size: .9em;
   }
 
   .presentation {
@@ -404,6 +470,12 @@ footer a:hover {
 }
 
 @media (min-width: 1000px) {
+
+  .portrait {
+    width: 60%;
+    margin-left: 40%;
+  }
+
   .moreprojects .photo {
     display: flex;
   }
@@ -426,10 +498,10 @@ footer a:hover {
       transform: rotate(-10deg);
     }
     40% {
-      transform: rotate(20deg);
+      transform: rotate(15deg);
     }
     60% {
-      transform: rotate(-10deg);
+      transform: rotate(-5deg);
     }
     80% {
       transform: rotate(0deg);
@@ -446,10 +518,10 @@ footer a:hover {
       transform: rotate(-10deg);
     }
     40% {
-      transform: rotate(20deg);
+      transform: rotate(15deg);
     }
     60% {
-      transform: rotate(-10deg);
+      transform: rotate(-5deg);
     }
     80% {
       transform: rotate(0deg);
@@ -466,10 +538,10 @@ footer a:hover {
       transform: rotate(-10deg);
     }
     40% {
-      transform: rotate(20deg);
+      transform: rotate(15deg);
     }
     60% {
-      transform: rotate(-10deg);
+      transform: rotate(-5deg);
     }
     80% {
       transform: rotate(0deg);
@@ -486,10 +558,10 @@ footer a:hover {
       transform: rotate(-10deg);
     }
     40% {
-      transform: rotate(20deg);
+      transform: rotate(15deg);
     }
     60% {
-      transform: rotate(-10deg);
+      transform: rotate(-5deg);
     }
     80% {
       transform: rotate(0deg);
