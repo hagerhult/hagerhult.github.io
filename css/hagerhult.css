@@ -1,11 +1,12 @@
 /* Mobile */
 
 body {
-  line-height: 1.4em;
+  font-size: 16px;
+  line-height: 1.4;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
   color: #1f2439;
-  background: #f2f3f7;
+  background: #e7e7ec;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
 }
@@ -34,10 +35,14 @@ a:hover, a:focus {
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.25rem;
   font-weight: 300;
-  line-height: 1.6em;
+  line-height: 1.5em;
   margin-bottom: .8em;
+}
+
+header, header p {
+  font-size: 1.5rem;
 }
 
 b {
@@ -48,20 +53,24 @@ li {
   list-style: none;
 }
 
-span {
-  font-size: 1.2em;
-  font-weight: 300;
-  line-height: 1.6em;
-}
-
 h1 {
-  font-size: 3em;
+  font-size: 4.5rem;
   font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0px;
 }
 
 h2 {
   font-size: 1em;
   font-weight: 600;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0px;
 }
 
   /* Content */
@@ -69,7 +78,6 @@ h2 {
 header {
   padding-top: 48px;
   font-weight: 600;
-  font-size: 1.6em;
 }
 
 .jumbotron {
@@ -109,7 +117,6 @@ nav {
 
 nav a {
   margin-left: 8px;
-  font-size: .8em;
 }
 
 nav a:hover {
@@ -154,10 +161,6 @@ section {
 
 .flex {
   margin: auto;
-}
-
-.row {
-
 }
 
 footer {
@@ -319,7 +322,6 @@ footer a:hover {
 }
 
 .eaccounting .button-outlined:hover {
-
   background: #1f2439;
   color: #F0F2F5;
 }
@@ -378,7 +380,7 @@ footer a:hover {
 }
 
 .rating {
-  color:#ff7a00;
+  color: #ff7a00;
 }
 
 .author {
@@ -408,7 +410,7 @@ footer a:hover {
     padding: 32px;
     margin-top: -16px;
     margin-bottom: 16px;
-    border: 16px solid #f2f3f7;
+    border: 16px solid #e7e7ec;
   }
 }
 
@@ -433,7 +435,6 @@ footer a:hover {
 
   nav a {
     margin-left: 16px;
-    font-size: .9em;
   }
 
   .presentation {
@@ -481,12 +482,10 @@ footer a:hover {
   }
 }
 
-/* Waving hand animation */
+/* Animations */
 .wave {
   display: inline-block;
   -webkit-animation: wave 1s infinite;
-  -moz-animation: wave 1s infinite;
-  -o-animation: wave 1s infinite;
   animation: wave 1s infinite;
 }
 
@@ -510,46 +509,7 @@ footer a:hover {
       transform: rotate(0deg);
     }
   }
-  @-moz-keyframes wave {
-    0% {
-      transform: rotate(0deg);
-    }
-    20% {
-      transform: rotate(-10deg);
-    }
-    40% {
-      transform: rotate(15deg);
-    }
-    60% {
-      transform: rotate(-5deg);
-    }
-    80% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-  @-o-keyframes wave {
-    0% {
-      transform: rotate(0deg);
-    }
-    20% {
-      transform: rotate(-10deg);
-    }
-    40% {
-      transform: rotate(15deg);
-    }
-    60% {
-      transform: rotate(-5deg);
-    }
-    80% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
+
   @keyframes wave {
     0% {
       transform: rotate(0deg);
