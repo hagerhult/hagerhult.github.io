@@ -333,8 +333,8 @@ ul {
   }
 
   .under_construction {
-    min-height: 50vh;
-    max-height: 70vh;
+    min-height: 70vh;
+    max-height: 90vh;
   }
 
   article .columns {
