@@ -54,7 +54,12 @@ a {
 
 .under_construction .columns {
   display: flex;
+  height: 70vh;
   min-height: 500px;
+}
+
+.under_construction img {
+  display: none;
 }
 
 .under_construction p a {
@@ -317,6 +322,10 @@ ul {
 
   .ist {
     max-width: 100%;
+  }
+
+  .under_construction img {
+    display: block;
   }
 
 }
