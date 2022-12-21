@@ -338,8 +338,8 @@ ul {
 
   article .columns {
     display: flex;
-    min-height: 50vh;
-    max-height: 75vh;
+    height: 50vh;
+    min-height:30vh;
   }
 
   .ist {
