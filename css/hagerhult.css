@@ -36,10 +36,25 @@ a {
   max-width: 100%;
 }
 
-.under_construction {
-  background: #f8f8f8;
-  height: auto;
+.jumbotron2 {
+  top: 0;
+  left: 0;
+  height: 85vh;
   min-height: 700px;
+  background: #f8f8f8;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.under_construction .row {
+  height: 70vh;
+  min-height: 500px;
+  display: flex;
+}
+
+.under_construction .columns {
+  display: flex;
+  min-height: 500px;
 }
 
 .under_construction p a {
@@ -55,8 +70,9 @@ a {
   text-decoration: none;
 }
 
-.under_construction span:hover {
+.under_construction span a:hover {
   border-bottom: 2px solid #F3D19C;
+  text-decoration: none;
 }
 
 .portrait {
@@ -141,7 +157,7 @@ p {
 
 article .columns {
   display: flex;
-  min-height: 350px;
+  height: 400px;
 }
 
 article h2, article p {
@@ -149,10 +165,11 @@ article h2, article p {
 }
 
 article img {
+  margin-top: -100px;
   max-height: 450px;
 }
 
-.work span {
+.work span, .under_construction span {
   font-weight: 600;
   color: var(--black);
 }
@@ -266,50 +283,6 @@ ul {
   padding-top: 56px;
 }
 
-.case_study {
-  padding-top: 56px;
-  padding-bottom: 40px;
-}
-
-.blurred_text {
-  color: transparent;
-  text-shadow: 0 0 10px var(--light_black);
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.alert {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.nda {
-  width: 320px;
-  background: #ffffff;
-  border-radius: 16px;
-  position: absolute; 
-  top: 100px;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
-}
-
-.nda_message {
-  padding: 24px;
-}
-
-.case_study_appstore {
-  background: var(--light_appstore);
-  min-height: 50vh;
-}
-
-.case_study_startup {
-  background: var(--light_startup);
-  min-height: 50vh;
-}
-
 /* Old devices */
 @media (max-width: 399px) {
 
@@ -332,15 +305,14 @@ ul {
       max-width: 360px;
   }
 
-  .under_construction {
-    height: 90vh;
-  }
-
   article .columns {
     display: flex;
-    height: auto;
-    min-height: 50vh;
-    max-height:75vh;
+    min-height: 500px;
+    height: 40vh;
+  }
+
+  article img {
+    margin-top: 0px;
   }
 
   .ist {
