@@ -108,12 +108,10 @@ header h4 {
 header a {
   text-decoration: none;
   color: var(--black);
-  transition: color 500ms ease-in-out;
 }
 
 header a:hover {
   text-decoration: none;
-  color: #00a3ff;
 }
 
 .pitch {
