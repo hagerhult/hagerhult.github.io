@@ -46,37 +46,42 @@ a {
   max-width: 100%;
 }
 
-.under_construction .row {
+.under_construction .row, .nda .row {
   height: 70vh;
   min-height: 500px;
   display: flex;
 }
 
-.under_construction .columns {
+.under_construction .columns, .nda .columns {
   display: flex;
   height: 70vh;
   min-height: 500px;
 }
 
-.under_construction img {
+.under_construction img, .nda img {
   display: none;
 }
 
-.under_construction p a {
+.under_construction p a, .nda p a {
   text-decoration: none;
 }
 
-.under_construction p a:hover {
+.under_construction p a:hover, .nda p a:hover {
   text-decoration: underline;
 }
 
-.under_construction span a {
+.under_construction span a, .nda span a {
   color: var(--black);
   text-decoration: none;
 }
 
 .under_construction span a:hover {
   border-bottom: 2px solid #F3D19C;
+  text-decoration: none;
+}
+
+.nda span a:hover {
+  border-bottom: 2px solid #91B3FA;
   text-decoration: none;
 }
 
@@ -164,16 +169,7 @@ article .columns {
   height: 400px;
 }
 
-article h2, article p {
-  max-width: 380px;
-}
-
-article img {
-  margin-top: -100px;
-  max-height: 450px;
-}
-
-.work span, .under_construction span {
+.work span, .under_construction span, .nda span {
   font-weight: 600;
   color: var(--black);
 }
@@ -235,37 +231,11 @@ article img {
   margin-right: 0;
 }
 
-.startup .u-pull-right {
-  margin-left: 4%;
-}
-
-.verisure {
-  max-width: 34%;
-  margin-left: 8%;
-  float: left;
+.experience .row .columns img {
+  max-width: 40%;
   opacity: 0.9;
-}
-
-.visma, .apoteket {
-  max-width: 34%;
-  float: right;
-  margin-right: 8%;
-  opacity: 0.9;
-}
-
-.ist {
-  max-width: 34%;
-  display: block;
-  margin: auto;
-  opacity: 0.9;
-}
-
-#bontouch {
-  fill: var(--light_white);
-  padding-top: 5%;
-  padding-bottom: 4%;
-  margin-left: 12%;
-  float: left;
+  margin-left: 4.6%;
+  margin-right: 4.6%;
 }
 
 ul {
@@ -285,6 +255,18 @@ ul {
 
 .experience, .contact {
   padding-top: 56px;
+}
+
+.casestudy {
+  background: #ffffff;
+}
+
+.review {
+   background: #eeeeee;
+   border: 1px solid #333333;
+   border-radius: 8px;
+   padding: 16px;
+   margin-bottom: 16px;
 }
 
 /* Old devices */
@@ -319,11 +301,7 @@ ul {
     margin-top: 0px;
   }
 
-  .ist {
-    max-width: 100%;
-  }
-
-  .under_construction img {
+  .under_construction img, .nda img {
     display: block;
   }
 
