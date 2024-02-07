@@ -34,14 +34,7 @@ a {
   overflow: hidden;
   max-width: 100%;
   background-color: #29a9eb;
-background-image: linear-gradient(-19deg, #29a9eb 0%, #a35cc6 100%);
-
-
-
-
-
-
-
+  background-image: linear-gradient(-19deg, #29a9eb 0%, #a35cc6 100%);
 }
 
 .portrait {
@@ -54,7 +47,8 @@ background-image: linear-gradient(-19deg, #29a9eb 0%, #a35cc6 100%);
   background-size: cover;
   width: 700px;
   mix-blend-mode: multiply;
-
+  overflow: hidden;
+  max-width: 80%;
 }
 
 header {
