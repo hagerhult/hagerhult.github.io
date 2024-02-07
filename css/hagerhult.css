@@ -5,12 +5,11 @@ body {
   --light_black: rgba(34, 34, 34, 0.9);
 
   --appstore: rgb(207, 186, 234);
-  --light_appstore: rgba(207, 186, 234, 0.5);
   --startup: rgb(134, 197, 240);
-  --light_startup: rgba(134, 197, 240, 0.3);
   --designsystem: #ffb3c1;
+  --innovation: rgb(255, 221, 168);
 
-  background: var(--white);
+  background: var(--black);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -29,76 +28,33 @@ a {
 .jumbotron {
   top: 0;
   left: 0;
-  height: 85vh;
+  height: 70vh;
   min-height: 700px;
   background: var(--white);
   overflow: hidden;
   max-width: 100%;
-}
+  background-color: #29a9eb;
+background-image: linear-gradient(-19deg, #29a9eb 0%, #a35cc6 100%);
 
-.jumbotron2 {
-  top: 0;
-  left: 0;
-  height: 85vh;
-  min-height: 700px;
-  background: #f8f8f8;
-  overflow: hidden;
-  max-width: 100%;
-}
 
-.under_construction .row, .nda .row {
-  height: 70vh;
-  min-height: 500px;
-  display: flex;
-}
 
-.under_construction .columns, .nda .columns {
-  display: flex;
-  height: 70vh;
-  min-height: 500px;
-}
 
-.under_construction img, .nda img {
-  display: none;
-}
 
-.under_construction p a, .nda p a {
-  text-decoration: none;
-}
 
-.under_construction p a:hover, .nda p a:hover {
-  text-decoration: underline;
-}
 
-.under_construction span a, .nda span a {
-  color: var(--black);
-  text-decoration: none;
-}
-
-.under_construction span a:hover {
-  border-bottom: 2px solid #F3D19C;
-  text-decoration: none;
-}
-
-.nda span a:hover {
-  border-bottom: 2px solid #91B3FA;
-  text-decoration: none;
 }
 
 .portrait {
-  background-image: url("me.png");
-  background-size: auto 100%;
-  height: 85vh;
-  min-height: 700px;
-  width: 370px;
-  background-position: top left;
-  background-repeat: no-repeat;
-  mix-blend-mode: multiply;
+  background: url('me.png') no-repeat left bottom;
   position: absolute;
-  top: 0;
-  right: 0;
-  opacity: 0.65;
-  overflow: hidden;
+  float: left;
+  margin-left: 20%;
+  height: 70vh;
+  min-height: 700px;
+  background-size: cover;
+  width: 700px;
+  mix-blend-mode: multiply;
+
 }
 
 header {
@@ -112,24 +68,26 @@ header h4 {
 
 header a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
 }
 
 header a:hover {
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
 }
 
 .pitch {
   display: flex;
-  height: 75vh;
-  min-height: 500px;
-  color: var(--light_black);
+  margin-top: 24px;
+  height: 55vh;
+  min-height: 550px;
+  color: var(--light_white);
   max-width: 280px;
 }
 
 .pitch a {
   text-decoration: none;
+  color: var(--light_white);
 }
 
 .pitch a:hover {
@@ -205,6 +163,15 @@ article .columns {
     border-bottom: 2px solid var(--startup);
 }
 
+.innovation article:hover h2 {
+  text-decoration: underline;
+  text-decoration-color: var(--innovation);
+}
+
+.innovation article:hover span {
+    border-bottom: 2px solid var(--innovation);
+}
+
 .work {
   background: #f8f8f8;
 }
@@ -222,7 +189,7 @@ article .columns {
   color: var(--light_black);
 }
 
-.designsystem {
+.innovation {
   padding-bottom: 24px;
 }
 
@@ -232,10 +199,9 @@ article .columns {
 }
 
 .experience .row .columns img {
-  max-width: 40%;
+  max-width: 48%;
   opacity: 0.9;
-  margin-left: 4.6%;
-  margin-right: 4.6%;
+  padding: 8%;
 }
 
 ul {
@@ -257,24 +223,11 @@ ul {
   padding-top: 56px;
 }
 
-.casestudy {
-  background: #ffffff;
-}
-
-.review {
-   background: #eeeeee;
-   border: 1px solid #333333;
-   border-radius: 8px;
-   padding: 16px;
-   margin-bottom: 16px;
-}
-
 /* Old devices */
 @media (max-width: 399px) {
 
   .portrait {
-    width: 105%;
-    margin-left: -5%;
+
   }
 
 }
@@ -301,25 +254,22 @@ ul {
     margin-top: 0px;
   }
 
-  .under_construction img, .nda img {
-    display: block;
-  }
-
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
 
-  .portrait {
-    width: 60%;
-    margin-left: 40%;
-    max-width: 100%;
-  }
+ 
 
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+
+   .portrait {
+    float: right;
+    right: 10%;
+  }
 
 }
 
