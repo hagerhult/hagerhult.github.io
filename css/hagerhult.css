@@ -6,7 +6,7 @@ body {
 
   --appstore: rgb(207, 186, 234);
   --startup: rgb(134, 197, 240);
-  --designsystem: #ffb3c1;
+  --designsystem: rgb(255, 179, 193);
   --innovation: rgb(255, 221, 168);
 
   background: var(--black);
@@ -28,27 +28,32 @@ a {
 .jumbotron {
   top: 0;
   left: 0;
-  height: 70vh;
-  min-height: 700px;
+  height: 700px;
   background: var(--white);
-  overflow: hidden;
+  overflow: visible;
   max-width: 100%;
   background-color: #29a9eb;
   background-image: linear-gradient(-19deg, #29a9eb 0%, #a35cc6 100%);
+}
+
+.profile {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .portrait {
   background: url('me.png') no-repeat left bottom;
   position: absolute;
   float: left;
-  margin-left: 20%;
-  height: 70vh;
-  min-height: 700px;
+  height: 700px;
   background-size: cover;
-  width: 700px;
   mix-blend-mode: multiply;
+  width: 100%;
+  max-width: 100%;
   overflow: hidden;
-  max-width: 80%;
 }
 
 header {
@@ -115,10 +120,13 @@ p {
   color: var(--light_white);
 }
 
+.appstore, .innovation, .designsystem, .startup {
+  padding-bottom: 48px;
+}
 
 article .columns {
   display: flex;
-  height: 400px;
+  height: auto;
 }
 
 .work span, .under_construction span, .nda span {
@@ -220,10 +228,6 @@ ul {
 /* Old devices */
 @media (max-width: 399px) {
 
-  .portrait {
-
-  }
-
 }
 
 /* Larger than mobile */
@@ -240,12 +244,22 @@ ul {
 
   article .columns {
     display: flex;
-    min-height: 500px;
+    min-height: 550px;
     height: 40vh;
+
   }
 
   article img {
     margin-top: 0px;
+  }
+
+  .portrait {
+    max-width: 80%;
+    margin-left: 20%;
+  }
+
+  .appstore, .innovation, .designsystem, .startup {
+    padding-bottom: 0px;
   }
 
 }
@@ -253,19 +267,30 @@ ul {
 /* Larger than tablet */
 @media (min-width: 750px) {
 
+  .portrait {
+    margin-left: calc(100% - 600px);
+    max-width: 600px;
+  }
  
-
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
 
-   .portrait {
-    float: right;
-    right: 10%;
+  .portrait {
+    margin-left: 30%;
+    max-width: 700px;
+    max-height: 700px;
   }
 
 }
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+  .portrait {
+     margin-left: 40%;
+     max-width: 700px;
+  }
+
+}
