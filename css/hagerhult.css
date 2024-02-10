@@ -7,7 +7,7 @@ body {
   --appstore: rgb(207, 186, 234);
   --startup: rgb(134, 197, 240);
   --designsystem: rgb(255, 179, 193);
-  --innovation: rgb(255, 221, 168);
+  --innovation: rgb(169, 169, 169);
 
   background: var(--black);
   -webkit-font-smoothing: antialiased;
@@ -129,49 +129,24 @@ article .columns {
   height: auto;
 }
 
-.work span, .under_construction span, .nda span {
-  font-weight: 600;
-  color: var(--black);
-}
-
-.work article:hover {
-  cursor: pointer;
-}
-
-.appstore article:hover h2 {
+.appstore h2 {
   text-decoration: underline;
   text-decoration-color: var(--appstore);
 }
 
-.appstore article:hover span {
-  border-bottom: 2px solid var(--appstore);
-}
-
-.designsystem article:hover h2 {
+.designsystem h2 {
   text-decoration: underline;
   text-decoration-color: var(--designsystem);
 }
 
-.designsystem article:hover span {
-  border-bottom: 2px solid var(--designsystem);
-}
-
-.startup article:hover h2 {
+.startup h2 {
   text-decoration: underline;
   text-decoration-color: var(--startup);
 }
 
-.startup article:hover span {
-    border-bottom: 2px solid var(--startup);
-}
-
-.innovation article:hover h2 {
+.innovation h2 {
   text-decoration: underline;
   text-decoration-color: var(--innovation);
-}
-
-.innovation article:hover span {
-    border-bottom: 2px solid var(--innovation);
 }
 
 .work {
@@ -181,6 +156,7 @@ article .columns {
 .work h2 {
   color: var(--black);
   margin-bottom: 16px;
+  text-decoration-thickness: 4px;
 }
 
 .work h5 {
