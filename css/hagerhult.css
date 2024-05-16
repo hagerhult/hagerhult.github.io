@@ -169,7 +169,7 @@ article .columns {
   padding-bottom: 24px;
 }
 
-.startup .columns {
+.startup .columns, .innovation . columns {
   margin-left: 0;
   margin-right: 0;
 }
