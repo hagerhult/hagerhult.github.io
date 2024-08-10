@@ -1,0 +1,277 @@
+body {
+  --black: rgb(22, 25, 31);
+  --dark_gray: rgb(34, 38, 48);
+  --accent: rgb(188, 188, 188);
+
+  background: var(--black);
+  -webkit-font-smoothing: antialiased;
+
+  color: white;
+  font-family: 'Poppins';
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  background: var(--accent);
+  border: none;
+  border-radius: 24px;
+  color: var(--black);
+  font-family: 'Poppins';
+}
+
+header {
+  background: linear-gradient(180deg, rgba(22, 25, 31, 0), rgba(22, 25, 31, 1)), 
+              url('pcb/forest.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+
+.topbar .columns {
+  padding-top: 48px;
+  padding-bottom: 16px;
+  float: left;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav {
+  display: none;
+}
+
+nav a {
+  padding: 8px;
+  display: inline-block;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: white;
+  border-bottom: 4px solid var(--accent);
+}
+
+span {
+  display: inline-block;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.jumbotron {
+  
+}
+
+.jumbotron .columns {
+  height: 75vh;
+  min-height: 500px;
+  display: flex;
+}
+
+.flex {
+  margin: auto;
+}
+
+.card {
+  border-radius: 16px;
+  margin-bottom: 24px;
+  padding: 24px;
+  background-color: var(--dark_gray);
+}
+
+#services .card {
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  min-height: 220px;
+}
+
+.card .text{
+  max-width: 70%;
+}
+
+#services .nyb {
+  background-image: url('pcb/nyb.png');
+}
+
+#services .utb {
+  background-image: url('pcb/utb.png');
+}
+
+#services .ren {
+  background-image: url('pcb/ren.png');
+}
+
+section {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 0.9em;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+#about {
+  background: var(--dark_gray);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+#about h3 {
+  text-align: center;
+}
+
+.columns .flex {
+  width: 100%;
+}
+
+.dude {
+  min-width: 100%;
+  min-height: 400px;
+  border-radius: 24px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  background-image: url('pcb/dude.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+#about .columns {
+  height: auto;
+  display: flex;
+}
+
+#testamonials .quote {
+  color: var(--accent);
+  font-size: 4em;
+  font-weight: 700;
+  font-family: "BIZ UDGothic", serif;
+  position: absolute;
+  margin-left: -40px;
+}
+
+#testamonials p {
+  display: inline-block;
+  float: left;
+  margin-left: 40px;
+}
+
+#testamonials .signature {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background: rgb(16, 20, 26);
+}
+
+footer .logo {
+  margin-bottom: 24px;
+}
+
+.social {
+  text-align: left;
+}
+
+.social-icon {
+  vertical-align: middle;
+}
+
+.social-text {
+  vertical-align: text-top;
+  margin-left: 8px;
+  font-weight: 300;
+  color: white;
+}
+
+.social a:hover > .social-text{
+  text-decoration: underline;
+}
+
+.map {
+  width: 100%;
+  border: 0;
+  border-radius: 16px;
+  height: 280px;
+}
+
+.legal {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: rgb(16, 20, 26);
+  text-align: center;
+  font-size: .9em;
+}
+
+.legal a {
+  text-decoration: none;
+  color: white;
+}
+
+.legal a:hover {
+  text-decoration: underline;
+}
+
+
+/* Grid becomes active */
+@media (min-width: 720px) {
+
+  nav {
+    float: right;
+    display: block;
+  }
+
+  #services .card {
+    min-height: 0;
+  }
+
+  #services .nyb {
+    background-size: 40%;
+  }
+
+  #about .columns {
+  height: 600px;
+}
+
+#about h3 {
+  text-align: left;
+  margin-top: 0;
+}
+
+}
+
