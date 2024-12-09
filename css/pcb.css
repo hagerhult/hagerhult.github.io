@@ -34,35 +34,28 @@ button {
 }
 
 header {
-  background: linear-gradient(180deg, rgba(22, 25, 31, 0), rgba(22, 25, 31, 1)), 
-              url('pcb/forest.jpg') no-repeat center center;
-  background-size: cover;
-}
-
-
-.topbar .columns {
-  padding-top: 48px;
-  padding-bottom: 16px;
-  float: left;
+  background: var(--black);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
 }
 
 .logo {
-  height: 40px;
+  height: 56px;
 }
 
 nav {
-  display: none;
+  
 }
 
 nav a {
-  padding: 8px;
+  padding: 16px 8px 16px 8px;
   display: inline-block;
 }
 
 nav a:hover {
   text-decoration: none;
   color: white;
-  border-bottom: 4px solid var(--accent);
 }
 
 span {
@@ -74,17 +67,30 @@ span {
 }
 
 .jumbotron {
-  
-}
-
-.jumbotron .columns {
-  height: 75vh;
-  min-height: 500px;
-  display: flex;
+  background: url('pcb/phille.jpeg') no-repeat top center;
+  background-size: cover;
+  height: 70vh;
+  margin: 0px auto;
 }
 
 .flex {
   margin: auto;
+}
+
+.pitch {
+  background: rgba(22, 25, 31, .5);
+  padding-left: 48px;
+  padding-right: 48px;
+  height: 100%;
+  display: flex;
+  width: 100%;
+}
+
+.test {
+  border: 1px solid green;
+  width: inherit;
+   box-sizing: border-box;
+  overflow: visible;
 }
 
 .card {
@@ -98,23 +104,24 @@ span {
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
-  min-height: 220px;
+  min-height: 200px;
+  display: flex;
 }
 
 .card .text{
   max-width: 70%;
 }
 
-#services .nyb {
-  background-image: url('pcb/nyb.png');
+#services .nybyggnation {
+  background-image: url('pcb/nybyggnation.png');
 }
 
-#services .utb {
-  background-image: url('pcb/utb.png');
+#services .renovering {
+  background-image: url('pcb/renovering.png');
 }
 
-#services .ren {
-  background-image: url('pcb/ren.png');
+#services .tillbyggnation {
+  background-image: url('pcb/tillbyggnation.png');
 }
 
 section {
@@ -122,7 +129,7 @@ section {
   margin-bottom: 24px;
 }
 
-h1 {
+h2 {
   font-weight: 500;
   line-height: 1.4;
 }
@@ -144,6 +151,14 @@ p {
   margin-bottom: 16px;
 }
 
+b {
+  font-weight: 500;
+}
+
+.center {
+  text-align: center;
+}
+
 #about {
   background: var(--dark_gray);
   padding-top: 24px;
@@ -158,13 +173,13 @@ p {
   width: 100%;
 }
 
-.dude {
+.portrait {
   min-width: 100%;
   min-height: 400px;
   border-radius: 24px;
   margin-top: 48px;
   margin-bottom: 48px;
-  background-image: url('pcb/dude.jpg');
+  background-image: url('pcb/portrait.jpg');
   background-size: cover;
   background-position: center center;
 }
@@ -174,7 +189,7 @@ p {
   display: flex;
 }
 
-#testamonials .quote {
+/*#testamonials .quote {
   color: var(--accent);
   font-size: 4em;
   font-weight: 700;
@@ -192,12 +207,11 @@ p {
 #testamonials .signature {
   margin-bottom: 0;
   font-style: italic;
-}
+}*/
 
 footer {
   padding-top: 48px;
   padding-bottom: 48px;
-  background: rgb(16, 20, 26);
 }
 
 footer .logo {
@@ -223,11 +237,13 @@ footer .logo {
   text-decoration: underline;
 }
 
-.map {
+.contact-form {
   width: 100%;
-  border: 0;
-  border-radius: 16px;
-  height: 280px;
+}
+
+input, textarea {
+  width: 100%;
+  background-color: var(--black);
 }
 
 .legal {
@@ -251,16 +267,37 @@ footer .logo {
 /* Grid becomes active */
 @media (min-width: 720px) {
 
+  header {
+    text-align: left;
+  }
+
   nav {
     float: right;
     display: block;
   }
 
-  #services .card {
-    min-height: 0;
+  nav a:hover {
+    text-decoration: none;
+    color: white;
+    border-bottom: 4px solid var(--accent);
   }
 
-  #services .nyb {
+  .pitch {
+    background: rgba(22, 25, 31, .5);
+    padding-left: 48px;
+    padding-right: 48px;
+    float: right;
+    height: 100%;
+    display: flex;
+    width: 35%;
+    min-width: 400px;
+  }
+
+  #services .card {
+    height: 260px;
+  }
+
+  #services .nybyggnation {
     background-size: 40%;
   }
 
