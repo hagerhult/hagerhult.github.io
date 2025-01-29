@@ -199,6 +199,27 @@ ul {
   padding-top: 56px;
 }
 
+.metrics {
+  display: inline-block;
+  width: 100%;
+}
+
+.metric {
+  width: auto;
+  float: left;
+  margin-right: 24px;
+  text-align: center;
+}
+
+.metric span {
+  font-size: .8em;
+}
+
+.metric h3 {
+  margin: 0;
+  padding: 0;
+}
+
 /* Old devices */
 @media (max-width: 399px) {
 
